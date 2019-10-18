@@ -1,6 +1,6 @@
 *{
     box-sizing: border-box;
-    font-family:"St Ryde W03 Regular", Arial, Helvetica, sans-serif;
+    font-family:"St Ryde W03 Regular", Arial, Helvetica, sans-serif, Verdana;
 }
 @font-face{
     font-family:"St Ryde W03 Regular";
@@ -13,6 +13,7 @@
     margin: auto;
     align-items: center;
     box-sizing: border-box;
+    max-width: 1020px;
 }
 #header-top {
     display: flex;
@@ -46,7 +47,7 @@
     display: flex;
     text-transform: none;
     font-family: Arial;
-    margin-left: 20px;
+    margin-left: 21px;
 }
 
 #header-menu ul li a {
@@ -66,14 +67,30 @@ li {
     padding-left: 160px;
 }
 
+#header-menu img {
+        -o-fit-object: contain;
+        height: 18px;
+        width: 22px;
+        align-items: baseline;
+}
 
 #img-block {
-    width: 100%;
-    position: relative;
-    align-items: center;
-    max-height: 100%;
-    max-width: 100%;
+    position: absolute;
 }
+
+#linebanner {
+    display: flex;
+    width: 1020px;
+    position: relative;
+    align-items: baseline;
+    padding-bottom: 110px;
+    bottom: 57px;
+}
+
+#logobanner {
+    line-height: 40px;
+}
+
 #logobanner h3 {
     font-size: 100px;
     color: white;
@@ -88,19 +105,19 @@ li {
 #logobanner h4 {
     font-size: 20px;
     color: white;
-    font-family: "St Ryde W03 Regular";
+    font-family: Arial, Helvetica, sans-serif;
     font-style: normal;
     font-weight: lighter;
-    padding-left: 320px;
+    padding-left: 295px;
     
 }
-
-#logobanner {
-    position: absolute;
-    top: 10%;
+#limg {
+    background-color: #ac9ebb;
 }
-
-
+#rimg {
+    background-color: #ac9ebb;
+    margin-left: 293px;
+}
 
 .Precontent {
     width: 100%;
@@ -109,6 +126,8 @@ li {
     margin: 20px 0;
     padding-left: 10px;
     padding-right: 10px;
+    width: 960px;
+    margin-left: 26px;
     
 }
 
@@ -151,14 +170,28 @@ li {
     padding-left: 0;
 }
 
+#footer {
+    height: 70px;
+    width: 100%;
+    background: rgb(236, 232, 232) ;
+}
+
 #Secondcontent, span {
+    text-align: center;
     font-size: 14px;
-    color: darkgrey;
+    color: black;
     line-height: 30px;
 }
 
 #Thirdcontent, h4 {
-    font-family: Helvetica;
+    font-family: Verdana;
     font-style: normal;
-    font-weight: lighter;
+    margin-top: 25px;
+}
+
+#End {
+    height: 10px;
+    width: 100%;
+    background-color: #ac9ebb;
+    margin-top: 21px;
 }
